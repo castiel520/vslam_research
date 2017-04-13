@@ -460,8 +460,6 @@ int main(int argc, char **argv)
     }
     if (glfwGetKey(window,GLFW_KEY_DOWN) == GLFW_PRESS)
           scale_factor *= 2;
-    //ModelMatrix = glm::rotate(glm::mat4(1.0), glm::radians(90.0f), glm::vec3( -1, 0, 0));
-    //ModelMatrix = glm::rotate(ModelMatrix, glm::radians(0.0), glm::vec3( 0, 1, 0));
     TranslateMatrix = glm::translate(glm::mat4(1.0f), glm::vec3(0,0,0));
     ScalingMatrix = glm::scale(glm::mat4(1.0f), glm::vec3(scale_factor));
     ModelMatrix = ModelMatrix * ScalingMatrix;
