@@ -11,6 +11,5 @@ will upload code soon
 
 ![Marker](https://github.com/castiel520/vslam_research/blob/master/labtop-AR-demo/Car.png)
 
-## Meaturement Demo
-under construction
-
+## Measurement Demo
+![Marker](https://github.com/castiel520/vslam_research/blob/master/measurement.png)
