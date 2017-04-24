@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0C5CEA11-FA5E-30A6-98C8-86758D106D85}</ProjectGUID>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opensource\opencv\build;D:\opensource\opencv\sources\include;D:\opensource\opencv\sources\include\opencv;D:\opensource\opencv\sources\modules\core\include;D:\opensource\opencv\sources\modules\flann\include;D:\opensource\opencv\sources\modules\imgproc\include;D:\opensource\opencv\sources\modules\ml\include;D:\opensource\opencv\sources\modules\photo\include;D:\opensource\opencv_contrib-master\modules\reg\include;D:\opensource\opencv_contrib-master\modules\surface_matching\include;D:\opensource\opencv\sources\modules\video\include;D:\opensource\opencv_contrib-master\modules\dnn\include;D:\opensource\opencv_contrib-master\modules\fuzzy\include;D:\opensource\opencv\sources\modules\imgcodecs\include;D:\opensource\opencv\sources\modules\shape\include;D:\opensource\opencv\sources\modules\videoio\include;D:\opensource\opencv\sources\modules\highgui\include;D:\opensource\opencv\sources\modules\objdetect\include;D:\opensource\opencv_contrib-master\modules\plot\include;D:\opensource\opencv\sources\modules\superres\include;D:\opensource\opencv\sources\modules\ts\include;D:\opensource\opencv_contrib-master\modules\xobjdetect\include;D:\opensource\opencv_contrib-master\modules\xphoto\include;D:\opensource\opencv_contrib-master\modules\bgsegm\include;D:\opensource\opencv_contrib-master\modules\bioinspired\include;D:\opensource\opencv_contrib-master\modules\dpm\include;D:\opensource\opencv_contrib-master\modules\face\include;D:\opensource\opencv\sources\modules\features2d\include;D:\opensource\opencv_contrib-master\modules\line_descriptor\include;D:\opensource\opencv_contrib-master\modules\saliency\include;D:\opensource\opencv_contrib-master\modules\text\include;D:\opensource\opencv\sources\modules\calib3d\include;D:\opensource\opencv_contrib-master\modules\ccalib\include;D:\opensource\opencv_contrib-master\modules\datasets\include;D:\opensource\opencv_contrib-master\modules\rgbd\include;D:\opensource\opencv_contrib-master\modules\stereo\include;D:\opensource\opencv_contrib-master\modules\tracking\include;D:\opensource\opencv\sources\modules\videostab\include;D:\opensource\opencv_contrib-master\modules\xfeatures2d\include;D:\opensource\opencv_contrib-master\modules\ximgproc\include;D:\opensource\opencv_contrib-master\modules\aruco\include;D:\opensource\opencv_contrib-master\modules\optflow\include;D:\opensource\opencv_contrib-master\modules\phase_unwrapping\include;D:\opensource\opencv\sources\modules\stitching\include;D:\opensource\opencv_contrib-master\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opensource\opencv\build;D:\opensource\opencv\sources\include;D:\opensource\opencv\sources\include\opencv;D:\opensource\opencv\sources\modules\core\include;D:\opensource\opencv\sources\modules\flann\include;D:\opensource\opencv\sources\modules\imgproc\include;D:\opensource\opencv\sources\modules\ml\include;D:\opensource\opencv\sources\modules\photo\include;D:\opensource\opencv_contrib-master\modules\reg\include;D:\opensource\opencv_contrib-master\modules\surface_matching\include;D:\opensource\opencv\sources\modules\video\include;D:\opensource\opencv_contrib-master\modules\dnn\include;D:\opensource\opencv_contrib-master\modules\fuzzy\include;D:\opensource\opencv\sources\modules\imgcodecs\include;D:\opensource\opencv\sources\modules\shape\include;D:\opensource\opencv\sources\modules\videoio\include;D:\opensource\opencv\sources\modules\highgui\include;D:\opensource\opencv\sources\modules\objdetect\include;D:\opensource\opencv_contrib-master\modules\plot\include;D:\opensource\opencv\sources\modules\superres\include;D:\opensource\opencv\sources\modules\ts\include;D:\opensource\opencv_contrib-master\modules\xobjdetect\include;D:\opensource\opencv_contrib-master\modules\xphoto\include;D:\opensource\opencv_contrib-master\modules\bgsegm\include;D:\opensource\opencv_contrib-master\modules\bioinspired\include;D:\opensource\opencv_contrib-master\modules\dpm\include;D:\opensource\opencv_contrib-master\modules\face\include;D:\opensource\opencv\sources\modules\features2d\include;D:\opensource\opencv_contrib-master\modules\line_descriptor\include;D:\opensource\opencv_contrib-master\modules\saliency\include;D:\opensource\opencv_contrib-master\modules\text\include;D:\opensource\opencv\sources\modules\calib3d\include;D:\opensource\opencv_contrib-master\modules\ccalib\include;D:\opensource\opencv_contrib-master\modules\datasets\include;D:\opensource\opencv_contrib-master\modules\rgbd\include;D:\opensource\opencv_contrib-master\modules\stereo\include;D:\opensource\opencv_contrib-master\modules\tracking\include;D:\opensource\opencv\sources\modules\videostab\include;D:\opensource\opencv_contrib-master\modules\xfeatures2d\include;D:\opensource\opencv_contrib-master\modules\ximgproc\include;D:\opensource\opencv_contrib-master\modules\aruco\include;D:\opensource\opencv_contrib-master\modules\optflow\include;D:\opensource\opencv_contrib-master\modules\phase_unwrapping\include;D:\opensource\opencv\sources\modules\stitching\include;D:\opensource\opencv_contrib-master\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opensource\opencv\build;D:\opensource\opencv\sources\include;D:\opensource\opencv\sources\include\opencv;D:\opensource\opencv\sources\modules\core\include;D:\opensource\opencv\sources\modules\flann\include;D:\opensource\opencv\sources\modules\imgproc\include;D:\opensource\opencv\sources\modules\ml\include;D:\opensource\opencv\sources\modules\photo\include;D:\opensource\opencv_contrib-master\modules\reg\include;D:\opensource\opencv_contrib-master\modules\surface_matching\include;D:\opensource\opencv\sources\modules\video\include;D:\opensource\opencv_contrib-master\modules\dnn\include;D:\opensource\opencv_contrib-master\modules\fuzzy\include;D:\opensource\opencv\sources\modules\imgcodecs\include;D:\opensource\opencv\sources\modules\shape\include;D:\opensource\opencv\sources\modules\videoio\include;D:\opensource\opencv\sources\modules\highgui\include;D:\opensource\opencv\sources\modules\objdetect\include;D:\opensource\opencv_contrib-master\modules\plot\include;D:\opensource\opencv\sources\modules\superres\include;D:\opensource\opencv\sources\modules\ts\include;D:\opensource\opencv_contrib-master\modules\xobjdetect\include;D:\opensource\opencv_contrib-master\modules\xphoto\include;D:\opensource\opencv_contrib-master\modules\bgsegm\include;D:\opensource\opencv_contrib-master\modules\bioinspired\include;D:\opensource\opencv_contrib-master\modules\dpm\include;D:\opensource\opencv_contrib-master\modules\face\include;D:\opensource\opencv\sources\modules\features2d\include;D:\opensource\opencv_contrib-master\modules\line_descriptor\include;D:\opensource\opencv_contrib-master\modules\saliency\include;D:\opensource\opencv_contrib-master\modules\text\include;D:\opensource\opencv\sources\modules\calib3d\include;D:\opensource\opencv_contrib-master\modules\ccalib\include;D:\opensource\opencv_contrib-master\modules\datasets\include;D:\opensource\opencv_contrib-master\modules\rgbd\include;D:\opensource\opencv_contrib-master\modules\stereo\include;D:\opensource\opencv_contrib-master\modules\tracking\include;D:\opensource\opencv\sources\modules\videostab\include;D:\opensource\opencv_contrib-master\modules\xfeatures2d\include;D:\opensource\opencv_contrib-master\modules\ximgproc\include;D:\opensource\opencv_contrib-master\modules\aruco\include;D:\opensource\opencv_contrib-master\modules\optflow\include;D:\opensource\opencv_contrib-master\modules\phase_unwrapping\include;D:\opensource\opencv\sources\modules\stitching\include;D:\opensource\opencv_contrib-master\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\opensource\opencv\build;D:\opensource\opencv\sources\include;D:\opensource\opencv\sources\include\opencv;D:\opensource\opencv\sources\modules\core\include;D:\opensource\opencv\sources\modules\flann\include;D:\opensource\opencv\sources\modules\imgproc\include;D:\opensource\opencv\sources\modules\ml\include;D:\opensource\opencv\sources\modules\photo\include;D:\opensource\opencv_contrib-master\modules\reg\include;D:\opensource\opencv_contrib-master\modules\surface_matching\include;D:\opensource\opencv\sources\modules\video\include;D:\opensource\opencv_contrib-master\modules\dnn\include;D:\opensource\opencv_contrib-master\modules\fuzzy\include;D:\opensource\opencv\sources\modules\imgcodecs\include;D:\opensource\opencv\sources\modules\shape\include;D:\opensource\opencv\sources\modules\videoio\include;D:\opensource\opencv\sources\modules\highgui\include;D:\opensource\opencv\sources\modules\objdetect\include;D:\opensource\opencv_contrib-master\modules\plot\include;D:\opensource\opencv\sources\modules\superres\include;D:\opensource\opencv\sources\modules\ts\include;D:\opensource\opencv_contrib-master\modules\xobjdetect\include;D:\opensource\opencv_contrib-master\modules\xphoto\include;D:\opensource\opencv_contrib-master\modules\bgsegm\include;D:\opensource\opencv_contrib-master\modules\bioinspired\include;D:\opensource\opencv_contrib-master\modules\dpm\include;D:\opensource\opencv_contrib-master\modules\face\include;D:\opensource\opencv\sources\modules\features2d\include;D:\opensource\opencv_contrib-master\modules\line_descriptor\include;D:\opensource\opencv_contrib-master\modules\saliency\include;D:\opensource\opencv_contrib-master\modules\text\include;D:\opensource\opencv\sources\modules\calib3d\include;D:\opensource\opencv_contrib-master\modules\ccalib\include;D:\opensource\opencv_contrib-master\modules\datasets\include;D:\opensource\opencv_contrib-master\modules\rgbd\include;D:\opensource\opencv_contrib-master\modules\stereo\include;D:\opensource\opencv_contrib-master\modules\tracking\include;D:\opensource\opencv\sources\modules\videostab\include;D:\opensource\opencv_contrib-master\modules\xfeatures2d\include;D:\opensource\opencv_contrib-master\modules\ximgproc\include;D:\opensource\opencv_contrib-master\modules\aruco\include;D:\opensource\opencv_contrib-master\modules\optflow\include;D:\opensource\opencv_contrib-master\modules\phase_unwrapping\include;D:\opensource\opencv\sources\modules\stitching\include;D:\opensource\opencv_contrib-master\modules\structured_light\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\opensource\cmake-3.7.2-win64-x64\bin\cmake.exe -HD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 -BD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 --check-stamp-file D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\opencv\build\OpenCVConfig-version.cmake;D:\opensource\opencv\build\OpenCVConfig.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\opensource\opencv\build\OpenCVModules.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\opensource\cmake-3.7.2-win64-x64\bin\cmake.exe -HD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 -BD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 --check-stamp-file D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\opencv\build\OpenCVConfig-version.cmake;D:\opensource\opencv\build\OpenCVConfig.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\opensource\opencv\build\OpenCVModules.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\opensource\cmake-3.7.2-win64-x64\bin\cmake.exe -HD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 -BD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 --check-stamp-file D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\opencv\build\OpenCVConfig-version.cmake;D:\opensource\opencv\build\OpenCVConfig.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\opensource\opencv\build\OpenCVModules.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\opensource\cmake-3.7.2-win64-x64\bin\cmake.exe -HD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 -BD:/opensource/ORB_SLAM2/Thirdparty/DBoW2 --check-stamp-file D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInitialize.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCCompiler.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeCXXCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeSystemSpecificInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeGenericSystem.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\WindowsPaths.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-C.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\3.7.2\CMakeRCCompiler.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeRCInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCXXInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeLanguageInformation.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Compiler\MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC-CXX.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\Platform\Windows-MSVC.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeCommonLanguageInclude.cmake;D:\opensource\opencv\build\OpenCVConfig-version.cmake;D:\opensource\opencv\build\OpenCVConfig.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageHandleStandardArgs.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\FindPackageMessage.cmake;D:\opensource\cmake-3.7.2-win64-x64\share\cmake-3.7\Modules\CMakeParseArguments.cmake;D:\opensource\opencv\build\OpenCVModules.cmake;D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\opensource\ORB_SLAM2\Thirdparty\DBoW2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/ZERO_CHECK.vcxproj">
+      <Project>AD892E99-793C-38D8-9277-2771E33B72DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/opensource/ORB_SLAM2/Thirdparty/DBoW2/DBoW2.vcxproj">
+      <Project>8DD78CB3-81A0-356B-A4D2-BE184520C554</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
