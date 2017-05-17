@@ -1,9 +1,9 @@
 # vslam_research
 this repo is for visual slam research
 
-#Monster Demo(with Urho3D Eigine)
+# Monster Demo(with Urho3D Eigine)
 
-![Marker](https://github.com/castiel520/vslam_research/blob/master/monster.png)
+![Marker](https://github.com/castiel520/vslam_research/blob/master/monster.jpg)
 
 ## Laptop AR
 
