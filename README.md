@@ -18,4 +18,4 @@ will upload code soon
 ## Measurement Demo
 ![Marker](https://github.com/castiel520/vslam_research/blob/master/measurement.png)
 
-## [Demo](https://www.youtube.com/watch?v=TIjsTcTWooI)
+## [Showcase](https://www.youtube.com/watch?v=TIjsTcTWooI)
