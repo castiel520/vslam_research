@@ -14,7 +14,7 @@ this repo is for visual slam research
 ![Marker](https://github.com/castiel520/vslam_research/blob/master/labtop-AR-demo/Car.png)
 
 ## sofa AR
-![Marker](https://github.com/castiel520/vslam_research/blob/master/labtop-AR-demo/sofa.png)
+![Marker](https://github.com/castiel520/vslam_research/blob/master/sofa.png)
 
 ## Measurement Demo
 ![Marker](https://github.com/castiel520/vslam_research/blob/master/measurement.png)
